@@ -13,6 +13,18 @@
         android:theme="@style/Theme.AllinOne"
         tools:targetApi="31">
         <activity
+            android:name=".activities.ScrollContent"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ComponentLayout"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WebOpener"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityLauncher"
+            android:exported="false" />
+        <activity
             android:name=".activities.ToastMaker"
             android:exported="false" />
         <activity

@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".activities.ToastMaker">
+    tools:context=".activities.ActivityLauncher">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_toast"
+        android:id="@+id/btn_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/orange"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="@string/show_toast"
+        android:text="@string/open_activity"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:icon="@drawable/show"

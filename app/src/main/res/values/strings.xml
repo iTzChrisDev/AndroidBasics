@@ -24,4 +24,11 @@
     <string name="this_text_will_change">This text will change</string>
     <string name="change_text">Change text</string>
     <string name="show_toast">Show Toast</string>
+    <string name="open_activity">Return to Menu</string>
+    <string name="open_youtube">Open Youtube</string>
+    <string name="open_github">Open Github</string>
+    <string name="open_google">Open google</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="welcome_log_in_your_account">Welcome, log in your account</string>
 </resources>

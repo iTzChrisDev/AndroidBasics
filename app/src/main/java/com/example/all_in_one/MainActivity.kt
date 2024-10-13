@@ -4,10 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import com.example.all_in_one.activities.ActivityLauncher
 import com.example.all_in_one.activities.ColorChanger
+import com.example.all_in_one.activities.ComponentLayout
 import com.example.all_in_one.activities.InputDisplay
+import com.example.all_in_one.activities.ScrollContent
 import com.example.all_in_one.activities.TextSwitch
 import com.example.all_in_one.activities.ToastMaker
+import com.example.all_in_one.activities.WebOpener
 import com.google.android.material.button.MaterialButton
 
 private lateinit var btnTextSwitch: MaterialButton
@@ -73,6 +77,18 @@ class MainActivity : ComponentActivity() {
         }
         btnToastMaker.setOnClickListener {
             startActivity(Intent(this, ToastMaker::class.java))
+        }
+        btnActivityLauncher.setOnClickListener {
+            startActivity(Intent(this, ActivityLauncher::class.java))
+        }
+        btnWebOpener.setOnClickListener {
+            startActivity(Intent(this, WebOpener::class.java))
+        }
+        btnComponentLayout.setOnClickListener {
+            startActivity(Intent(this, ComponentLayout::class.java))
+        }
+        btnScrollComponent.setOnClickListener {
+            startActivity(Intent(this, ScrollContent::class.java))
         }
     }
 }
