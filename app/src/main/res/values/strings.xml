@@ -23,4 +23,5 @@
     <string name="change_background">Change</string>
     <string name="this_text_will_change">This text will change</string>
     <string name="change_text">Change text</string>
+    <string name="show_toast">Show Toast</string>
 </resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="16sp"
+    tools:context=".activities.InputDisplay">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraint_layout_input_display">
+        <GridLayout
+            android:id="@+id/grid_layout_input_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/constraint_layout_input_display"
+            app:layout_constraintStart_toStartOf="@+id/constraint_layout_input_display"
+            app:layout_constraintEnd_toEndOf="@+id/constraint_layout_input_display"
+            android:columnCount="4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_text_display"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/gray"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_height="50sp"
+                android:layout_columnWeight="3"
+                android:hint="Enter text"
+                android:layout_marginRight="8sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_input_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Show Text" />
+        </GridLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter text to display here"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="24sp"
+            app:layout_constraintTop_toBottomOf="@id/grid_layout_input_display" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

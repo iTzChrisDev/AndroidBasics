@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AllinOne"
         tools:targetApi="31">
         <activity
+            android:name=".activities.ToastMaker"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InputDisplay"
+            android:exported="false" />
+        <activity
             android:name=".activities.ColorChanger"
             android:exported="false" />
         <activity
@@ -21,7 +27,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.AllinOne">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

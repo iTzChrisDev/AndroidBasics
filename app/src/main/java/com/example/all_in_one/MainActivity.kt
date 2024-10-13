@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import com.example.all_in_one.activities.ColorChanger
+import com.example.all_in_one.activities.InputDisplay
 import com.example.all_in_one.activities.TextSwitch
+import com.example.all_in_one.activities.ToastMaker
 import com.google.android.material.button.MaterialButton
 
 private lateinit var btnTextSwitch: MaterialButton
@@ -37,7 +39,7 @@ class MainActivity : ComponentActivity() {
         initEvents()
     }
 
-    fun initComponents(){
+    fun initComponents() {
         btnTextSwitch = findViewById(R.id.btn_text_switch)
         btnInputDisplay = findViewById(R.id.btn_input_display)
         btnColorChanger = findViewById(R.id.btn_color_changer)
@@ -59,12 +61,18 @@ class MainActivity : ComponentActivity() {
         btnKeyboardHider = findViewById(R.id.btn_keyboard_hider)
     }
 
-    fun initEvents(){
+    fun initEvents() {
         btnTextSwitch.setOnClickListener {
             startActivity(Intent(this, TextSwitch::class.java))
         }
         btnColorChanger.setOnClickListener {
             startActivity(Intent(this, ColorChanger::class.java))
+        }
+        btnInputDisplay.setOnClickListener {
+            startActivity(Intent(this, InputDisplay::class.java))
+        }
+        btnToastMaker.setOnClickListener {
+            startActivity(Intent(this, ToastMaker::class.java))
         }
     }
 }
