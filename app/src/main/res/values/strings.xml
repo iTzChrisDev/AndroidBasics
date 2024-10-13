@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">All-in-One</string>
+    <string name="app_title">Aplicaciones con Android Studio</string>
+    <string name="app_texto_switch">Text Switch</string>
+    <string name="app_input_display">Input Display</string>
+    <string name="app_color_changer">Color changer</string>
+    <string name="app_toast_maker">Toast Maker</string>
+    <string name="app_component_layout">Component Layout</string>
+    <string name="app_scroll_component">Scroll Component</string>
+    <string name="app_image_switcher">Image Switcher</string>
+    <string name="app_checkbox_selector">Checkbox Selector</string>
+    <string name="app_radio_selector">Radio Selector</string>
+    <string name="app_slider_value">Slider Value</string>
+    <string name="app_activity_launcher">Activity Launcher</string>
+    <string name="app_web_opener">WEB Opener</string>
+    <string name="app_counter">Counter App</string>
+    <string name="app_delayed_text">Delayed Text</string>
+    <string name="app_text_toogle">Text Toggle</string>
+    <string name="app_snackbar_notifier">Snackbar Notifier</string>
+    <string name="app_title_changer">Title Changer</string>
+    <string name="app_password_viewer">Password Viewer</string>
+    <string name="app_keyboard_hider">Keyboard Hider</string>
+    <string name="change_background">Change</string>
+    <string name="this_text_will_change">This text will change</string>
+    <string name="change_text">Change text</string>
 </resources>
