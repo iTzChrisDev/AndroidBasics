@@ -8,11 +8,11 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
 
-private lateinit var txtInput:TextInputEditText
-private lateinit var btnInput:MaterialButton
-private lateinit var txtShow:MaterialTextView
-
 class InputDisplay : AppCompatActivity() {
+    private lateinit var txtInput:TextInputEditText
+    private lateinit var btnInput:MaterialButton
+    private lateinit var txtShow:MaterialTextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

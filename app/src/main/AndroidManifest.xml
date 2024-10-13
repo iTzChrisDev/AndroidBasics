@@ -13,6 +13,22 @@
         android:theme="@style/Theme.AllinOne"
         tools:targetApi="31">
         <activity
+            android:name=".activities.RadioSelector"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckBoxSelector"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TitleChanger"
+            android:exported="false"
+            android:theme="@style/Theme.AllinOne" />
+        <activity
+            android:name=".activities.ImageSwitcher"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SliderValue"
+            android:exported="false" />
+        <activity
             android:name=".activities.ScrollContent"
             android:exported="false" />
         <activity

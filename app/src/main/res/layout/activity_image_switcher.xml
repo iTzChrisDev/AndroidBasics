@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".activities.WebOpener">
-
+    tools:context=".activities.ImageSwitcher"
+    android:background="@color/white">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,47 +13,39 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/image_display_switcher"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:background="@drawable/layout_bg"
+            android:padding="16sp"
+            android:layout_marginBottom="32sp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_youtube"
+            android:id="@+id/btn_image_switcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/change_image"
+            app:iconTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:icon="@drawable/refresh"
+            app:iconSize="48sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_select_image_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconTint="@color/white"
             android:backgroundTint="@color/red"
-            app:icon="@drawable/youtube"
-            app:iconSize="32sp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/open_youtube"
-            app:iconTint="@color/white"
+            android:text="@string/select_image"
             android:textColor="@color/white"
-            android:textSize="16sp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_github"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            app:icon="@drawable/github"
-            app:iconSize="32sp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/open_github"
-            app:iconTint="@color/white"
-            android:textColor="@color/white"
-            android:textSize="16sp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_google"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/gray"
-            app:icon="@drawable/google"
-            app:iconSize="32sp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/open_google"
-            app:iconTint="@color/white"
-            android:textColor="@color/white"
-            android:textSize="16sp"/>
+            android:textSize="18sp"
+            app:icon="@drawable/input"
+            app:iconSize="48sp" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

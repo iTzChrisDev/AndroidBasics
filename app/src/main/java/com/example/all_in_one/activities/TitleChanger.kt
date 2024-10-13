@@ -1,26 +1,32 @@
 package com.example.all_in_one.activities
 
+import android.os.Build
 import android.os.Bundle
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.all_in_one.R
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 
-class TextSwitch : AppCompatActivity() {
+class TitleChanger : AppCompatActivity() {
     private var words: List<String> = emptyList()
-    private lateinit var button: MaterialButton
-    private lateinit var txt: TextView
     private var lastText: String? = null
+    private lateinit var button: MaterialButton
+    private lateinit var toolbar: MaterialToolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_text_switch)
+        setContentView(R.layout.activity_title_changer)
+        toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = window
+            window.statusBarColor = ContextCompat.getColor(this, R.color.green)
+        }
         initComponents()
         initEvents()
     }
-
     private fun initComponents(){
         words = listOf(
             "Hola Mundo!",
@@ -31,8 +37,7 @@ class TextSwitch : AppCompatActivity() {
             "Olá Mundo!",
             "Привет мир!"
         )
-        button = findViewById(R.id.btnChange)
-        txt = findViewById(R.id.txtChange)
+        button = findViewById(R.id.btn_title_changer)
     }
 
     private fun initEvents(){
@@ -42,7 +47,7 @@ class TextSwitch : AppCompatActivity() {
                 newText = words.random()
             } while (newText == lastText)
             lastText = newText
-            txt.text = newText
+            toolbar.title = newText
         }
     }
 }

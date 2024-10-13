@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".activities.CheckBoxSelector">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_pizza_order"
+            android:layout_width="wrap_content"
+            android:layout_height="52sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/select_toppings_for_your_pizza"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/check_box_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@id/check_box_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:columnCount="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_pizza_order">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pepperoni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16sp"
+                android:backgroundTint="@color/orange"
+                app:buttonTint="@color/orange"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/pepperoni"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                app:buttonTint="@color/orange"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/extra_cheese"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pineapple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                app:buttonTint="@color/orange"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/pineapple"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/meat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/orange"
+                android:layout_marginEnd="16sp"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/meat"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </GridLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_show_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/show_order"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_box_layout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_pizza_order_result"
+            android:layout_width="wrap_content"
+            android:layout_height="52sp"
+            android:layout_marginTop="32sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/your_order_is"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_show_order" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_display_toppings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_pizza_order_result" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

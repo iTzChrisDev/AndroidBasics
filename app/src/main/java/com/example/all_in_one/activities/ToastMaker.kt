@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.all_in_one.R
 import com.google.android.material.button.MaterialButton
 
-private lateinit var btn_toast : MaterialButton
-
 class ToastMaker : AppCompatActivity() {
+    private lateinit var btn_toast : MaterialButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

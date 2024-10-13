@@ -8,10 +8,10 @@ import com.example.all_in_one.R
 import com.google.android.material.button.MaterialButton
 import kotlin.random.Random
 
-private lateinit var button: MaterialButton
-private lateinit var view: ConstraintLayout
-
 class ColorChanger : AppCompatActivity() {
+    private lateinit var button: MaterialButton
+    private lateinit var view: ConstraintLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

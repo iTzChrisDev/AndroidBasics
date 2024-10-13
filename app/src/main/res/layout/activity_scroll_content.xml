@@ -5,6 +5,324 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="32sp"
     tools:context=".activities.ScrollContent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:paddingTop="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="8sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/web"
+                    app:tint="@color/cyan" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/world_wide_web"
+                    android:textAlignment="center"
+                    android:textColor="@color/cyan"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/palette"
+                    app:tint="@color/orange" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/colors_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/lock"
+                    app:tint="@color/red" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/locked_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/puzzle"
+                    app:tint="@color/blue" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/cube_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/number"
+                    app:tint="@color/green" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/calculator"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/key"
+                    app:tint="@color/yellow" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/keyboard_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellow"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/img"
+                    app:tint="@color/purple" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/image_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/palette"
+                    app:tint="@color/orange" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/colors_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/lock"
+                    app:tint="@color/red" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/locked_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/puzzle"
+                    app:tint="@color/blue" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/cube_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/number"
+                    app:tint="@color/green" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/calculator"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/key"
+                    app:tint="@color/yellow" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/keyboard_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/yellow"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8sp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:src="@drawable/img"
+                    app:tint="@color/purple" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:text="@string/image_scroll"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

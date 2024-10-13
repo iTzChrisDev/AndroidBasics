@@ -8,11 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.all_in_one.R
 import com.google.android.material.button.MaterialButton
 
-private lateinit var btn_google: MaterialButton
-private lateinit var btn_github: MaterialButton
-private lateinit var btn_youtube: MaterialButton
-
 class WebOpener : AppCompatActivity() {
+    private lateinit var btn_google: MaterialButton
+    private lateinit var btn_github: MaterialButton
+    private lateinit var btn_youtube: MaterialButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

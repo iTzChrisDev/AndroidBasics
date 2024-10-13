@@ -5,9 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="32sp"
     tools:context=".activities.ComponentLayout">
     <LinearLayout
-        android:layout_width="256sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,12 +25,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/web"
-                app:tint="@color/cyan">
+                app:tint="@color/purple">
             </ImageView>
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/cyan"
+                android:textColor="@color/purple"
                 android:textAlignment="center"
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="@string/welcome_log_in_your_account"
@@ -41,7 +43,7 @@
             android:textColor="@color/black"
             android:textCursorDrawable="@null"
             android:textColorHint="@color/gray"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/gray"
             android:fontFamily="@font/montserrat_regular"
             android:layout_height="50sp"
             android:layout_columnWeight="3"
@@ -53,7 +55,7 @@
             android:textColor="@color/black"
             android:textCursorDrawable="@null"
             android:textColorHint="@color/gray"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/gray"
             android:fontFamily="@font/montserrat_regular"
             android:layout_height="50sp"
             android:layout_columnWeight="3"
@@ -63,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16sp"
-            android:backgroundTint="@color/cyan"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Log in" />
     </LinearLayout>

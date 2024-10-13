@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48sp"
-        android:padding="8sp"
-        android:textAlignment="center"
         android:fontFamily="@font/montserrat_semibold"
+        android:padding="8sp"
         android:text="@string/app_title"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/scrollMenu"
@@ -37,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
+            android:paddingEnd="8sp"
             android:paddingBottom="16sp">
 
             <TextView
@@ -53,103 +54,110 @@
                 android:id="@+id/btn_text_switch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="4sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/app_texto_switch"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/red"
                 app:icon="@drawable/refresh"
                 app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginEnd="4sp"
-                android:backgroundTint="@color/red"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_texto_switch" />
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_input_display"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="4sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/app_input_display"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/red"
                 app:icon="@drawable/input"
                 app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginStart="4sp"
-                android:backgroundTint="@color/red"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_input_display" />
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_color_changer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="4sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/app_color_changer"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/red"
                 app:icon="@drawable/palette"
                 app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginEnd="4sp"
-                android:backgroundTint="@color/red"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_color_changer" />
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_toast_maker"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/toast"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/red"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_toast_maker" />
+                android:text="@string/app_toast_maker"
+                android:textColor="@color/white"
+                app:icon="@drawable/toast"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Diseño de Interfaz"
-                android:layout_marginTop="16sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_component_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/puzzle"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/purple"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_component_layout" />
+                android:text="@string/app_component_layout"
+                android:textColor="@color/white"
+                app:icon="@drawable/puzzle"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_scroll_component"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/scroll"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/purple"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_scroll_component" />
+                android:text="@string/app_scroll_component"
+                android:textColor="@color/white"
+                app:icon="@drawable/scroll"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Componentes de UI"
-                android:layout_marginTop="16sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -158,154 +166,165 @@
                 android:id="@+id/btn_image_switcher"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/img"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_image_switcher" />
+                android:text="@string/app_image_switcher"
+                android:textColor="@color/white"
+                app:icon="@drawable/img"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_checkbox_selector"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/check"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_checkbox_selector" />
+                android:text="@string/app_checkbox_selector"
+                android:textColor="@color/white"
+                app:icon="@drawable/check"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_radio_selector"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/radio"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_radio_selector" />
+                android:text="@string/app_radio_selector"
+                android:textColor="@color/white"
+                app:icon="@drawable/radio"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_slider_value"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/slider"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_slider_value" />
+                android:text="@string/app_slider_value"
+                android:textColor="@color/white"
+                app:icon="@drawable/slider"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Navegación y Activities"
-                android:layout_marginTop="16sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_activity_launcher"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/activity"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/cyan"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_activity_launcher" />
+                android:text="@string/app_activity_launcher"
+                android:textColor="@color/white"
+                app:icon="@drawable/activity"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_web_opener"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/web"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/cyan"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_web_opener" />
+                android:text="@string/app_web_opener"
+                android:textColor="@color/white"
+                app:icon="@drawable/web"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Manipulacion de datos y estados"
-                android:layout_marginTop="16sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_counter"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/number"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/blue"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_counter" />
+                android:text="@string/app_counter"
+                android:textColor="@color/white"
+                app:icon="@drawable/number"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_delayed_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/hour"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/blue"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_delayed_text" />
+                android:text="@string/app_delayed_text"
+                android:textColor="@color/white"
+                app:icon="@drawable/hour"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_text_toogle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/eye"
-                app:iconSize="48sp"
-                app:iconGravity="top"
                 android:layout_columnSpan="2"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/blue"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_text_toogle" />
+                android:text="@string/app_text_toogle"
+                android:textColor="@color/white"
+                app:icon="@drawable/eye"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Notificaciones y mensajes"
-                android:layout_marginTop="16sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -314,37 +333,39 @@
                 android:id="@+id/btn_snackbar_notifier"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/bell"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/green"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_snackbar_notifier" />
+                android:text="@string/app_snackbar_notifier"
+                android:textColor="@color/white"
+                app:icon="@drawable/bell"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_title_changer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/notes"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/green"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_title_changer" />
+                android:text="@string/app_title_changer"
+                android:textColor="@color/white"
+                app:icon="@drawable/notes"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnSpan="2"
+                android:layout_marginTop="16sp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Entrada de datos"
-                android:layout_marginTop="16sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -353,29 +374,31 @@
                 android:id="@+id/btn_password_viewer"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/lock"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginEnd="4sp"
                 android:backgroundTint="@color/yellow"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_password_viewer" />
+                android:text="@string/app_password_viewer"
+                android:textColor="@color/white"
+                app:icon="@drawable/lock"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_keyboard_hider"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/key"
-                app:iconSize="48sp"
-                app:iconGravity="top"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginStart="4sp"
                 android:backgroundTint="@color/yellow"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/app_keyboard_hider" />
+                android:text="@string/app_keyboard_hider"
+                android:textColor="@color/white"
+                app:icon="@drawable/key"
+                app:iconSize="48sp"
+                app:iconTint="@color/white" />
         </GridLayout>
 
     </ScrollView>

@@ -39,8 +39,9 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_input_display"
                 android:layout_width="wrap_content"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/orange"
+                android:backgroundTint="@color/red"
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="Show Text" />
         </GridLayout>
