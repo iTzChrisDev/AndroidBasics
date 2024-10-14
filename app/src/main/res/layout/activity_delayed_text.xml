@@ -11,21 +11,21 @@
     tools:context=".activities.InputDisplay">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout_input_display"
+        android:id="@+id/constraint_layout_input_display_delay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <GridLayout
-            android:id="@+id/grid_layout_input_display"
+            android:id="@+id/grid_layout_input_display_delay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="4"
-            app:layout_constraintEnd_toEndOf="@+id/constraint_layout_input_display"
-            app:layout_constraintStart_toStartOf="@+id/constraint_layout_input_display"
-            app:layout_constraintTop_toTopOf="@+id/constraint_layout_input_display">
+            app:layout_constraintEnd_toEndOf="@+id/constraint_layout_input_display_delay"
+            app:layout_constraintStart_toStartOf="@+id/constraint_layout_input_display_delay"
+            app:layout_constraintTop_toTopOf="@+id/constraint_layout_input_display_delay">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_text_display"
+                android:id="@+id/input_text_display_delay"
                 android:layout_height="50sp"
                 android:layout_width="200dp"
                 android:layout_columnWeight="3"
@@ -44,17 +44,17 @@
                 android:textCursorDrawable="@null" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_input_display"
+                android:id="@+id/btn_input_display_delay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/red"
+                android:backgroundTint="@color/blue"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="Show Text"
+                android:text="Change in 3s"
                 android:textColor="@color/white" />
         </GridLayout>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/txt_display"
+            android:id="@+id/txt_display_delay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24sp"
@@ -63,7 +63,7 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintTop_toBottomOf="@id/grid_layout_input_display" />
+            app:layout_constraintTop_toBottomOf="@id/grid_layout_input_display_delay" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     <string name="app_input_display">Input Display</string>
     <string name="app_color_changer">Color changer</string>
     <string name="app_toast_maker">Toast Maker</string>
-    <string name="app_component_layout">Comp Layout</string>
+    <string name="app_component_layout">Layout Comp</string>
     <string name="app_scroll_component">Scroll Comp</string>
     <string name="app_image_switcher">Image Switcher</string>
     <string name="app_checkbox_selector">Checkbox Selector</string>
@@ -51,4 +51,7 @@
     <string name="show_order">Show Order</string>
     <string name="select_your_payment_method">Select your payment method</string>
     <string name="show_method_selected">Show method selected</string>
+    <string name="show_snackbar">Show Snackbar</string>
+    <string name="toggle_text">Toggle text</string>
+    <string name="visible_text">Visible text</string>
 </resources>

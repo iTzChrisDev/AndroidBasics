@@ -9,6 +9,7 @@ import com.example.all_in_one.activities.CheckBoxSelector
 import com.example.all_in_one.activities.ColorChanger
 import com.example.all_in_one.activities.ComponentLayout
 import com.example.all_in_one.activities.CounterApp
+import com.example.all_in_one.activities.DelayedText
 import com.example.all_in_one.activities.InputDisplay
 import com.example.all_in_one.activities.ScrollContent
 import com.example.all_in_one.activities.SliderValue
@@ -17,6 +18,8 @@ import com.example.all_in_one.activities.ToastMaker
 import com.example.all_in_one.activities.WebOpener
 import com.example.all_in_one.activities.ImageSwitcher
 import com.example.all_in_one.activities.RadioSelector
+import com.example.all_in_one.activities.SnackbarNotifier
+import com.example.all_in_one.activities.TextToggle
 import com.example.all_in_one.activities.TitleChanger
 import com.google.android.material.button.MaterialButton
 
@@ -113,6 +116,15 @@ class MainActivity : ComponentActivity() {
         }
         btnCounter.setOnClickListener {
             startActivity(Intent(this, CounterApp::class.java))
+        }
+        btnSnackbarNotifier.setOnClickListener {
+            startActivity(Intent(this, SnackbarNotifier::class.java))
+        }
+        btnTextToggle.setOnClickListener {
+            startActivity(Intent(this, TextToggle::class.java))
+        }
+        btnDelayedText.setOnClickListener {
+            startActivity(Intent(this, DelayedText::class.java))
         }
     }
 }
