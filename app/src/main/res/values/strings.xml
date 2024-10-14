@@ -5,8 +5,8 @@
     <string name="app_input_display">Input Display</string>
     <string name="app_color_changer">Color changer</string>
     <string name="app_toast_maker">Toast Maker</string>
-    <string name="app_component_layout">Component Layout</string>
-    <string name="app_scroll_component">Scroll Component</string>
+    <string name="app_component_layout">Comp Layout</string>
+    <string name="app_scroll_component">Scroll Comp</string>
     <string name="app_image_switcher">Image Switcher</string>
     <string name="app_checkbox_selector">Checkbox Selector</string>
     <string name="app_radio_selector">Radio Selector</string>

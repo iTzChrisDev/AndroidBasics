@@ -8,6 +8,7 @@ import com.example.all_in_one.activities.ActivityLauncher
 import com.example.all_in_one.activities.CheckBoxSelector
 import com.example.all_in_one.activities.ColorChanger
 import com.example.all_in_one.activities.ComponentLayout
+import com.example.all_in_one.activities.CounterApp
 import com.example.all_in_one.activities.InputDisplay
 import com.example.all_in_one.activities.ScrollContent
 import com.example.all_in_one.activities.SliderValue
@@ -109,6 +110,9 @@ class MainActivity : ComponentActivity() {
         }
         btnRadioSelector.setOnClickListener {
             startActivity(Intent(this, RadioSelector::class.java))
+        }
+        btnCounter.setOnClickListener {
+            startActivity(Intent(this, CounterApp::class.java))
         }
     }
 }

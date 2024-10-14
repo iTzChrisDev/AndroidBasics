@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:columnCount="2"
             android:paddingEnd="8sp"
+            android:paddingStart="8sp"
             android:paddingBottom="16sp">
 
             <TextView
