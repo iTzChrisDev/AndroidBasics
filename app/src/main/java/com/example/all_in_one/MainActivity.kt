@@ -17,6 +17,8 @@ import com.example.all_in_one.activities.TextSwitch
 import com.example.all_in_one.activities.ToastMaker
 import com.example.all_in_one.activities.WebOpener
 import com.example.all_in_one.activities.ImageSwitcher
+import com.example.all_in_one.activities.KeyboardHider
+import com.example.all_in_one.activities.PasswordViewer
 import com.example.all_in_one.activities.RadioSelector
 import com.example.all_in_one.activities.SnackbarNotifier
 import com.example.all_in_one.activities.TextToggle
@@ -125,6 +127,12 @@ class MainActivity : ComponentActivity() {
         }
         btnDelayedText.setOnClickListener {
             startActivity(Intent(this, DelayedText::class.java))
+        }
+        btnPasswordViewer.setOnClickListener {
+            startActivity(Intent(this, PasswordViewer::class.java))
+        }
+        btnKeyboardHider.setOnClickListener {
+            startActivity(Intent(this, KeyboardHider::class.java))
         }
     }
 }

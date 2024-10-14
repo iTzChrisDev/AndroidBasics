@@ -54,4 +54,7 @@
     <string name="show_snackbar">Show Snackbar</string>
     <string name="toggle_text">Toggle text</string>
     <string name="visible_text">Visible text</string>
+    <string name="set_your_password">Set your password</string>
+    <string name="set_password">Set password</string>
+    <string name="hide_keyboard">Toggle keyboard</string>
 </resources>
