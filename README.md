@@ -14,71 +14,71 @@ Este repositorio contiene una serie de aplicaciones desarrolladas para explorar 
 
 ## 1. 🖱️ Interacción Básica con Usuarios
 
-### TextoSwitch
+* ### TextoSwitch
 Cambia el texto de un `TextView` al presionar un botón.
 
-### InputDisplay
+* ### InputDisplay
 Toma un input del usuario a través de un `EditText` y lo muestra en un `TextView` al presionar un botón.
 
-### ColorChanger
+* ### ColorChanger
 Cambia el color de fondo de la pantalla al presionar un botón.
 
-### ToastMaker
+* ### ToastMaker
 Muestra un mensaje tipo "Toast" al presionar un botón.
 
 ## 2. 🎨 Diseño de Interfaz
 
-### ComponentLayout
+* ### ComponentLayout
 Implementa un `LinearLayout` con varios componentes, como botones y campos de texto.
 
-### ScrollContent
+* ### ScrollContent
 Utiliza un `ScrollView` para manejar contenido extenso que no cabe en una sola pantalla.
 
 ## 3. 🧩 Componentes de UI Avanzados
 
-### ImageSwitcher
+* ### ImageSwitcher
 Muestra y cambia imágenes dentro de un `ImageView` al presionar un botón.
 
-### CheckBoxSelector
+* ### CheckBoxSelector
 Incluye varias casillas de verificación (`CheckBox`) y muestra qué casillas están seleccionadas.
 
-### RadioSelector
+* ### RadioSelector
 Permite seleccionar una opción de varias usando `RadioButton` y muestra la selección.
 
-### SliderValue
+* ### SliderValue
 Utiliza una `SeekBar` para mostrar el valor actual en un `TextView`.
 
 ## 4. 🚀 Navegación y Actividades
 
-### ActivityLauncher
+* ### ActivityLauncher
 Abre una nueva pantalla (`Activity`) desde un botón.
 
-### WebOpener
+* ### WebOpener
 Abre un navegador web con una URL específica al presionar un botón.
 
 ## 5. 💾 Manipulación de Datos y Estados
 
-### CounterApp
+* ### CounterApp
 Incrementa un contador cada vez que se presiona un botón.
 
-### DelayedText
+* ### DelayedText
 Cambia el texto de un `TextView` después de un retardo utilizando un `Handler`.
 
-### TextToggle
+* ### TextToggle
 Oculta o muestra el texto de un `TextView` al alternar un botón.
 
 ## 6. 📢 Notificaciones y Mensajes
 
-### SnackbarNotifier
+* ### SnackbarNotifier
 Muestra un mensaje usando `Snackbar` al presionar un botón.
 
-### TitleChanger
+* ### TitleChanger
 Cambia el título de la `Activity` al presionar un botón.
 
 ## 7. 🔒 Seguridad y Entrada de Datos
 
-### PasswordViewer
+* ### PasswordViewer
 Permite ingresar una contraseña en un `EditText` y mostrarla al presionar un botón.
 
-### KeyboardHider
+* ### KeyboardHider
 Oculta el teclado virtual después de ingresar texto en un `EditText` y presionar un botón.
