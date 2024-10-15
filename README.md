@@ -4,13 +4,13 @@ Este repositorio contiene una serie de aplicaciones desarrolladas para explorar 
 
 ## Tabla de Contenidos
 
-1. [🖱️ Interacción Básica con Usuarios](#1-interacción-básica-con-usuarios)
-2. [🎨 Diseño de Interfaz](#2-diseño-de-interfaz)
-3. [🧩 Componentes de UI Avanzados](#3-componentes-de-ui-avanzados)
-4. [🚀 Navegación y Actividades](#4-navegación-y-actividades)
-5. [💾 Manipulación de Datos y Estados](#5-manipulación-de-datos-y-estados)
-6. [📢 Notificaciones y Mensajes](#6-notificaciones-y-mensajes)
-7. [🔒 Seguridad y Entrada de Datos](#7-seguridad-y-entrada-de-datos)
+1. [🖱️ Interacción Básica con Usuarios](1-%EF%B8%8F-interacción-básica-con-usuarios)
+2. [🎨 Diseño de Interfaz](#2--diseño-de-interfaz)
+3. [🧩 Componentes de UI Avanzados](#3--componentes-de-ui-avanzados)
+4. [🚀 Navegación y Actividades](#4--navegación-y-actividades)
+5. [💾 Manipulación de Datos y Estados](#5--manipulación-de-datos-y-estados)
+6. [📢 Notificaciones y Mensajes](#6--notificaciones-y-mensajes)
+7. [🔒 Seguridad y Entrada de Datos](#7--seguridad-y-entrada-de-datos)
 
 ## 1. 🖱️ Interacción Básica con Usuarios
 
